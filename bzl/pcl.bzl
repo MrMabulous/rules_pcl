@@ -160,7 +160,7 @@ def pcl_library(name, **kwargs):
             "{}/include/**/*.h".format(name),
             "{}/include/**/*.hh".format(name),
         ], exclude = exclude_hdrs),
-        copts = ["-Wno-unknown-pragmas"],
+        copts = [],
         includes = ["{}/include".format(name)],
         visibility = ["//visibility:public"],
         **kwargs
